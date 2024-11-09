@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS投稿補助ツール</title>
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header-link">
+            <img src="../images/logo.png" alt="Logo">
+            <h1>SNS投稿補助ツール</h1>
+        </a>
+    </header>
+    <div class="content">
+        <h2>ご提案内容</h2>
+        <div class="white-container">
+            <div class="content-wrapper">
+                <div class="title-section">
+                    <img src="../images/instagram_icon.png" alt="Instagram Icon">
+                    <span>この季節に注目される美容（フィード）</span>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <h3>作成されたネタのタイトル 1</h3>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <button class="generate-btn notion-btn">Notionへ書き出し</button>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <h3>作成されたネタのタイトル 2</h3>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <button class="generate-btn notion-btn">Notionへ書き出し</button>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <div class="accordion-header">
+                            <h3>作成されたネタのタイトル 3</h3>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <button class="generate-btn notion-btn">Notionへ書き出し</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-group">
+            <a href="input.html" class="generate-btn back-btn">入力へ戻る</a>
+        </div>
+    </div>
+    <footer class="footer">
+        © 2024 Bridge Create Inc.
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', function() {
+            this.parentElement.classList.toggle('active');
+        });
+    });
+    </script>
+</body>
+</html>
